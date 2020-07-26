@@ -2,7 +2,7 @@
 
 using Microsoft.ML.Data;
 
-namespace Github_hyfree_SpamClassificationML.Model
+namespace SpamClassificationML.Model
 {
     public class ModelInput
     {

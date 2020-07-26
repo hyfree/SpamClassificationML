@@ -5,22 +5,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.ML;
-using Github_hyfree_SpamClassificationML.Model;
+using SpamClassificationML.Model;
 
-namespace Github_hyfree_SpamClassificationML.Model
+namespace SpamClassificationML.Model
 {
     public class ConsumeModel
     {
+        private MLContext mlContext = new MLContext();
+        public PredictionEngine<ModelInput, ModelOutput> predEngine { get; set; }
+        
+        public void loadModel(string modelPath)
+        {
+            ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
+            predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
+        }
+        public ModelOutput Predict(ModelInput input)
+        {
+            ModelOutput result = predEngine.Predict(input); 
+            return result;
+        }
+        public ModelOutput Predict(string input)
+        {
+            ModelInput modelInput = new ModelInput();
+            modelInput.Value = input;
+            return Predict(modelInput);
+
+        }
         // For more info on consuming ML.NET models, visit https://aka.ms/model-builder-consume
         // Method for consuming model in your app
-        public static ModelOutput Predict(ModelInput input)
-        {
 
+
+        public static ModelOutput Predict(string modelPath, ModelInput input)
+        {
             // Create new MLContext
             MLContext mlContext = new MLContext();
 
             // Load model & create prediction engine
-            string modelPath = @"C:\Users\WangXianQiang\AppData\Local\Temp\MLVSTools\github.hyfree.SpamClassificationML\github.hyfree.SpamClassificationML.Model\MLModel.zip";
+         
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 
@@ -28,5 +49,6 @@ namespace Github_hyfree_SpamClassificationML.Model
             ModelOutput result = predEngine.Predict(input);
             return result;
         }
+
     }
 }
