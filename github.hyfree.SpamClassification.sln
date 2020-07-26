@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "github.hyfree.SpamClassification", "github.hyfree.SpamClassification\github.hyfree.SpamClassification.csproj", "{A1D62E3E-A329-45E6-9EAB-42F890852647}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "github.hyfree.SpamClassificationML.Model", "github.hyfree.SpamClassificationML.Model\github.hyfree.SpamClassificationML.Model.csproj", "{991EF992-D023-4305-A736-B28B5E4ECA26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "github.hyfree.SpamClassificationML.ConsoleApp", "github.hyfree.SpamClassificationML.ConsoleApp\github.hyfree.SpamClassificationML.ConsoleApp.csproj", "{4FE16068-E3F7-4319-BBA7-62D9FD8E6CEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1D62E3E-A329-45E6-9EAB-42F890852647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D62E3E-A329-45E6-9EAB-42F890852647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D62E3E-A329-45E6-9EAB-42F890852647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D62E3E-A329-45E6-9EAB-42F890852647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991EF992-D023-4305-A736-B28B5E4ECA26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991EF992-D023-4305-A736-B28B5E4ECA26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991EF992-D023-4305-A736-B28B5E4ECA26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991EF992-D023-4305-A736-B28B5E4ECA26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE16068-E3F7-4319-BBA7-62D9FD8E6CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE16068-E3F7-4319-BBA7-62D9FD8E6CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE16068-E3F7-4319-BBA7-62D9FD8E6CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE16068-E3F7-4319-BBA7-62D9FD8E6CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EF60CAC-7236-4A94-9FF1-82F989891021}
+	EndGlobalSection
+EndGlobal
