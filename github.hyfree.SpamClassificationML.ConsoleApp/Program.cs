@@ -4,7 +4,8 @@ using System;
 using System.IO;
 using System.Linq;
 using Microsoft.ML;
-using Github_hyfree_SpamClassificationML.Model;
+
+using SpamClassificationML.Model;
 
 namespace Github_hyfree_SpamClassificationML.ConsoleApp
 {

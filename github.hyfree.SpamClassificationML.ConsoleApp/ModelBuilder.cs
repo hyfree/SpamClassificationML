@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using Microsoft.ML;
 using Microsoft.ML.Data;
-using Github_hyfree_SpamClassificationML.Model;
+using SpamClassificationML.Model;
 
 namespace Github_hyfree_SpamClassificationML.ConsoleApp
 {
